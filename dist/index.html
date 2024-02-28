@@ -12,16 +12,16 @@
               <label for="email">Email: <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required></label>
             </li>
             <li>
-              <label for="country">Country: <input type="text" name="country" id="country" placeholder="United States"></label>
+              <label for="country">Country: <input type="text" name="country" id="country" minlength="4" placeholder="United States" required></label>
             </li>
             <li>
-              <label for="zip">Zip Code: <input type="number" name="zip" id="zip" placeholder="12345"></label>
+              <label for="zip">Zip Code: <input type="text" name="zip" id="zip" placeholder="12345" pattern="^\d{5}(?:-?\d{4})?$" required></label>
             </li>
             <li>
-              <label for="password">Password: <input type="password" name="password" id="password"></label>
+              <label for="password">Password: <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required></label>
             </li>
             <li>
-              <label for="passwordConfirm">Confirm Password: <input type="password" name="passwordConfirm" id="passwordConfirm"></label>
+              <label for="passwordConfirm">Confirm Password: <input type="password" name="passwordConfirm" id="passwordConfirm" required></label>
             </li>
             <li>
               <button id="submitBtn" type="submit">Submit</button>

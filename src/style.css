@@ -1,12 +1,16 @@
+input:focus {
+  outline: none;
+}
+
 input {
   border-radius: 0.7rem;
 }
 
-#email:valid {
+input:valid {
   background-color: lightgreen;
 }
 
-#email:invalid {
-  border: 2px red solid;
+.invalid {
   background-color: lightyellow;
+  border: 2px red solid;
 }
