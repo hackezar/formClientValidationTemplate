@@ -2,8 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Output Management</title>
+    <title>Client Side Form Validation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="index.bundle.js"></script><script defer src="print.bundle.js"></script></head>
   <body>
+    <div class="formContainer">
+      <form class="form">
+        <fieldset>       <ul>
+            <li>
+              <label for="email">Email: <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required></label>
+            </li>
+            <li>
+              <label for="country">Country: <input type="text" name="country" id="country" placeholder="United States"></label>
+            </li>
+            <li>
+              <label for="zip">Zip Code: <input type="number" name="zip" id="zip" placeholder="12345"></label>
+            </li>
+            <li>
+              <label for="password">Password: <input type="password" name="password" id="password"></label>
+            </li>
+            <li>
+              <label for="passwordConfirm">Confirm Password: <input type="password" name="passwordConfirm" id="passwordConfirm"></label>
+            </li>
+            <li>
+              <button id="submitBtn" type="submit">Submit</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
